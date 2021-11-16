@@ -1,0 +1,556 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.center{
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+/*////////////////////////HEADER///////////////////////////*/
+.header{
+    background: #222222;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#switcher:checked ~ .nav{
+    right: -232px;
+    width: 0;
+    visibility: hidden;
+    display: none;
+}
+
+
+.nav{
+    background-color: #fff;
+    padding: 16px 16px 32px 32px;
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    width: 232px;
+    box-sizing: border-box;
+    transition: right 2s;
+}
+
+
+.headerSearch{
+    margin-left: 41px;
+}
+
+.headerIcons:not(:last-child){
+    margin-right: 33px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none; 
+   }
+
+.nav_link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+
+}
+
+.nav_prodacts{
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #6F6E6E;
+}
+
+/*///////////////////////////PROMO////////////////////*/
+.promo{
+    background: #F1E4E6;
+    display: flex;
+    padding-left: calc(50%-800px);
+    padding-right: calc(50%-800px);
+}
+.promoImg{
+    width: 50%;
+}
+.promoPhoto{
+    width: 100%;
+}
+.promo-h1{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+.promo-h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+.promoText{
+    padding-top: 16%;
+}
+.promoContent{
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+.promo-h2Fashion{
+    color: #F16D7F;
+}
+
+/*///////////////////////////SALES////////////////////*/
+
+.sales{
+    padding-top: 68px;
+    padding-bottom: 96px;
+}
+
+.salesLittle{
+    display: flex;
+    gap: 30px;
+    background-position: center;
+}
+.salesLittleItems1{
+    background-image: url(../img/imgForWomen.jpg);
+}
+.salesLittleItems2{
+    background-image: url(../img/imgForMen.jpg);
+}
+.salesLittleItems3{
+    background-image: url(../img/imgForKids.jpg);
+}
+.salesItems{
+    height: 260px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.salesBig{
+    background-image: url(../img/Group\ 39.jpg);
+    height: 180px;
+    background-position: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sales30{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.salesHeader{
+    color: #F16D7F;
+
+}
+
+/*///////////////////////////БЛОК С ТЕКСТОМ////////////////////*/
+
+.headerTextFeturedItems1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+}
+
+.headerTextFeturedItems2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/*///////////////////////////ТОВАРЫ////////////////////*/
+
+.prodacts{
+    margin-top: 48px;
+}
+
+.prodactsTop{
+  display: flex;
+  justify-content: space-between;
+}
+.prodactsArea{
+    background-image: url(../img/Background.png);
+    height: 581px;
+    width: 360px;
+    position: relative;
+    
+}
+
+.prodactsBottom{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.prodactsHeader{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: 24px;
+    margin-left: 18px;
+    
+}
+
+.prodactText{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    height: 51px;
+    margin-top: 13px;
+    width: 315px;
+    margin-left: 18px;
+    }
+
+
+.prodactsDollar{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    margin-top: 18px;
+    margin-left: 18px;
+}
+
+
+.prodactsIMG{
+    width: 100%;
+    
+}
+
+.prodactHeaderLink{
+    text-decoration: none;
+}
+
+.prodactAdd{
+    text-decoration: none;
+}
+
+.prodactsIMG:hover{
+    filter: brightness(0.5);
+    
+}
+
+.prodactAdd{
+    position: absolute;
+    top: 188px;
+    left: 111px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border:1px solid #FFFFFF;
+    width: 139px;
+    height: 44px;
+    display: none;
+
+    
+}
+
+
+.ProdactsLinks:hover .prodactAdd{
+    display: flex;
+}
+
+.prodactsBotton{
+    display: flex;
+    
+}
+
+.prodactsBotton2{
+    padding-left: 13px;
+    padding-top: 12px;
+}
+
+.prodactsBotton3{
+    padding-left: 11px;
+    padding-top: 15px;
+}
+
+
+/*//////////////////////////////////ССЫЛКА////////////////////////*/
+
+.LinkAllProdacts
+{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    
+}
+.Link{
+    margin-top: 48px;
+    height: 47px;
+    width: 211px;
+    border: 1px solid #F16D7F;
+    margin-left: calc(50% - 105px);
+    text-align: center;
+    
+}
+
+.LinkAllProdactsText{
+    padding-top: 14px;
+}
+.Link:hover{
+    background:  #F16D7F;
+    border: 1px solid #FF6A6A;
+}
+.Link:hover .LinkAllProdacts{
+    color: #FFFFFF;
+}
+/*//////////////////////BOTTOM///////////*/
+
+.bottom{
+    background-color:  #222224;
+    height: 341px;
+    margin-top: 96px;
+    
+}
+
+
+.bottomPicture{
+    margin-top: 104px;
+    
+}
+
+.picture1{
+    margin-left: 13%;
+}
+
+.picture2{
+    margin-left: 30%;
+}
+
+.picture3{
+    margin-left: 30%;
+}
+
+.bottomHeder{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+
+.bottomHeaderImportant{
+    display: flex;
+}
+
+.bottomHeder1{
+    margin-top:28px;
+    margin-left: 9%;
+}
+
+.bottomHeder2{
+    margin-top: 29px;
+    margin-left: 23%;
+}
+
+.bottomHeder3{
+    margin-top:28px ;
+    margin-left: 21%;
+}
+
+.TextAbout{
+    height: 34px;
+    width: 310px;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+
+}
+
+.bottomText{
+    display: flex;
+}
+
+.bottomText1{
+    margin-top: 16px;
+    margin-left: 1%;
+}
+
+.bottomText2{
+    margin-left: 7%; 
+    margin-top: 16px; 
+}
+
+.bottomText3{
+    margin-left: 7%;
+    margin-top: 16px;
+}
+
+
+/*/////////////////////////BOTTOM INPUT////////*/
+
+.BottomInput{
+    height: 448px;
+    background-image: url(../img/photo\ subscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-position: center bottom;
+}
+
+
+
+.BottomHeadering{
+    padding-top: 150px;
+    width: 557px;
+    padding-left: 40%;
+}
+
+.BottomInputHeader{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%;
+    color: #222224;
+    text-align: center;
+    
+}
+
+.BottomInputHeader2{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167.2%;
+    color: #222224;
+    text-align: center;
+}
+
+.BottomInputSend{
+    background: #E1E1E1;
+    height: 49px;
+    border: none;
+    padding-left: 22px;
+    border-radius: 30px 0px 0px 30px;
+    width: 256px;
+    outline: none;
+    
+}
+
+.InputAll{
+    display: flex;
+    padding-left: 58%;
+    padding-top: 40px;
+    width: 356px;
+}
+
+.InputSubmit{
+    border: none;
+    height: 49px;
+    border-radius: 0px 30px 30px 0px;
+    background: #F16D7F;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100px;
+    outline: none;
+}
+
+.BottomPart1{
+    
+}
+
+.BottomText{
+    padding-top: 223px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    font-weight: normal;
+    height: 99px;
+    width: 360px;
+}
+
+
+/*/////////////СОЦ СЕТИ/////////*/
+
+.Sotial{
+    background: #222224;
+    height: 79px;
+    display: flex;
+}
+
+.SotialText{
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    padding-top: 30px;
+    padding-left: calc(50% - 565px);
+    
+
+}
+
+.SotialCards{
+    padding-top: 24px;
+    padding-left: calc(50% + 120px);
+    
+}
+
+
+@media screen and (max-width: 1023px){
+    .center{
+        padding-left: calc(50% - 368px);
+        padding-right:calc(50% - 368px) ;
+    }
+
+    .salesLittle{
+        gap: 20px;
+    }
+    .prodactsTop{
+        display: inline;
+        
+    }
+    .prodactsBottom{
+        display: inline;
+    }
+
+   .BottomInput{
+       display: inline;
+   }
+   .BottomPart1{
+        padding-left: 35%;
+   }
+}
